@@ -1,5 +1,5 @@
 <template>
-<v-card class="pa-2">
+<v-card class="pa-2" width="300px">
     <v-card-subtitle>{{ data }} | {{ hora }}</v-card-subtitle>
     <v-card-title>{{ time_1 }}</v-card-title>
     <v-card-title>{{ time_2 }}</v-card-title>
