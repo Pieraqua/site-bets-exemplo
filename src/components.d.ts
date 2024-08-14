@@ -10,6 +10,8 @@ declare module 'vue' {
     AppFooter: typeof import('./components/AppFooter.vue')['default']
     CartaoPartida: typeof import('./components/CartaoPartida.vue')['default']
     HelloWorld: typeof import('./components/HelloWorld.vue')['default']
+    NavbarHorizontalOverlay: typeof import('./components/NavbarHorizontalOverlay.vue')['default']
+    NavbarVerticalOverlay: typeof import('./components/NavbarVerticalOverlay.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }
