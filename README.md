@@ -2,6 +2,8 @@
 
 Frontend de um site de bets feito como exercício.
 
+![imagem da pagina de bets](betspage.png)
+
 ## TODO
 
 - Tela de Apostas Esportivas
