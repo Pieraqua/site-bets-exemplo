@@ -4,13 +4,14 @@ Frontend de um site de bets feito como exercício.
 
 ## TODO
 
-- Tela de Futebol
+- Tela de Apostas Esportivas
 - Cartões para os jogos atuais
 - Página do jogo
 - Propagandas
 - Jogos ao Vivo
 - Navbar vertical mock
 - Integração com alguma api?
+- Consertar as navbar no caso de zoom
 
 ## Project Setup
 
