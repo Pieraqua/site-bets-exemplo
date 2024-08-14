@@ -6,15 +6,23 @@ Frontend de um site de bets feito como exercício.
 
 ## TODO
 
-- ~~Tela de Apostas Esportivas~~
-- ~~Cartões para os jogos atuais~~
-- Página do jogo
-- Propagandas
-- Jogos ao Vivo
-- ~~Navbar vertical mock~~
-- Integração com alguma api?
-- Consertar as navbar no caso de zoom
-- Embelezar
+- Overlay do site/portal
+    - Navbar horizontal
+    - Navbar vertical
+    - Footnote
+- Aplicação (/sport)
+    - Layout
+    - Navbar do app
+    - Página principal
+        - Abas da página principal
+        - Display de jogos futuros
+        - Display de jogos
+            - Abas do display
+            - Cartões de jogos
+            - Cartão de jogo principal
+            - Cartão de combinações populares
+            - Cartão de competição principal
+    - Scaling correto por limiares
 
 ## Project Setup
 
