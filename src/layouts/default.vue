@@ -2,11 +2,11 @@
   <v-app>
     <NavbarHorizontalOverlay @open="open()"></NavbarHorizontalOverlay>
     <NavbarVerticalOverlay :open="open_overlay"/>
-    <v-main>
+    <v-main >
       <router-view />
+      <AppFooter />
     </v-main>
 
-    <AppFooter />
   </v-app>
 </template>
 

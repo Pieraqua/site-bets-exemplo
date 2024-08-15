@@ -1,27 +1,29 @@
 <template>
-<v-navigation-drawer rail v-if="!open">
-    <v-btn variant="plain" :ripple="false" flat icon="mdi-gift"></v-btn>
-    <v-btn variant="plain" :ripple="false" flat icon="mdi-pistol" color="orange"></v-btn>
-    <v-btn variant="plain" :ripple="false" flat icon="mdi-ship-wheel" color="blue"></v-btn>
-    <v-divider></v-divider>
-    <v-btn variant="plain" :ripple="false" flat icon="mdi-poker-chip"></v-btn>
-    <v-btn variant="plain" :ripple="false" flat icon="mdi-head-snowflake"></v-btn>
-    <v-btn variant="plain" :ripple="false" flat icon="mdi-head-snowflake"></v-btn>
-    <v-btn variant="plain" :ripple="false" flat icon="mdi-fruit-cherries"></v-btn>
-    <v-btn variant="plain" :ripple="false" flat icon="mdi-soccer"></v-btn>
-    <v-btn variant="plain" :ripple="false" flat icon="mdi-cards-playing-club"></v-btn>
-    <v-btn variant="plain" :ripple="false" flat icon="mdi-bullseye-arrow"></v-btn>
-    <v-btn variant="plain" :ripple="false" flat icon="mdi-youtube-tv"></v-btn>
-    <v-divider></v-divider>
-    <v-btn variant="plain" :ripple="false" flat icon="mdi-crown"></v-btn>
-    <v-btn variant="plain" :ripple="false" flat icon="mdi-share-variant"></v-btn>
-    <v-btn variant="plain" :ripple="false" flat icon="mdi-party-popper"></v-btn>
-    <v-btn variant="plain" :ripple="false" flat icon="mdi-monitor-arrow-down"></v-btn>
-    <v-btn variant="plain" block :ripple="false" flat><v-icon color='blue'>mdi-headset</v-icon></v-btn>
+<v-navigation-drawer style="position:fixed" app rail v-if="!open" class="hide-scrollbar">
+    <v-list >
+        <v-list-item variant="plain" :ripple="false" flat link value="/4"><v-icon>mdi-gift</v-icon></v-list-item>
+        <v-list-item variant="plain" :ripple="false" flat link value="/5"><v-icon color="orange">mdi-pistol</v-icon></v-list-item>
+        <v-list-item variant="plain" :ripple="false" flat link value="/6"><v-icon color="blue">mdi-ship-wheel</v-icon></v-list-item>
+        <v-divider></v-divider>
+        <v-list-item variant="plain" :ripple="false" flat link value="/2"><v-icon>mdi-poker-chip</v-icon></v-list-item>
+        <v-list-item variant="plain" :ripple="false" flat link value="/1"><v-icon>mdi-head-snowflake</v-icon></v-list-item>
+        <v-list-item variant="plain" :ripple="false" flat link value="/3"><v-icon>mdi-head-snowflake</v-icon></v-list-item>
+        <v-list-item variant="plain" :ripple="false" flat link value="/7"><v-icon>mdi-fruit-cherries</v-icon></v-list-item>
+        <v-list-item variant="plain" :ripple="false" flat link value="/8"><v-icon>mdi-soccer</v-icon></v-list-item>
+        <v-list-item variant="plain" :ripple="false" flat link value="/9"><v-icon>mdi-cards-playing-club</v-icon></v-list-item>
+        <v-list-item variant="plain" :ripple="false" flat link value="/10"><v-icon>mdi-bullseye-arrow</v-icon></v-list-item>
+        <v-list-item variant="plain" :ripple="false" flat link value="/11"><v-icon>mdi-youtube-tv</v-icon></v-list-item>
+        <v-divider></v-divider>
+        <v-list-item variant="plain" :ripple="false" flat link value="/17"><v-icon color="orange">mdi-crown</v-icon></v-list-item>
+        <v-list-item variant="plain" :ripple="false" flat link value="/14"><v-icon>mdi-share-variant</v-icon></v-list-item>
+        <v-list-item variant="plain" :ripple="false" flat link value="/15"><v-icon>mdi-party-popper</v-icon></v-list-item>
+        <v-list-item variant="plain" :ripple="false" flat link value="/16"><v-icon>mdi-monitor-arrow-down</v-icon></v-list-item>
+        <v-list-item variant="plain" :ripple="false" flat link value="/18"><v-icon color='blue'>mdi-headset</v-icon></v-list-item>
+    </v-list>
 </v-navigation-drawer>
 
 
-<v-navigation-drawer v-if="open">
+<v-navigation-drawer style="position:fixed" app v-if="open" class="hide-scrollbar">
     <v-list nav density="compact">
         <v-container  cols="2" class="mb-2 mt-2 pa-0">
             <v-row no-gutters >
@@ -129,4 +131,11 @@ const itens_meio_aberto = [
 </script>
 
 <style>
+.hide-scrollbar *::-webkit-scrollbar{
+    display: none
+}
+.hide-scrollbar *{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
 </style>

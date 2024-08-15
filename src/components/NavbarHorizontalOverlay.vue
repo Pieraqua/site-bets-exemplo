@@ -1,6 +1,6 @@
 <template>
 
-    <v-app-bar :elevation="2" class="bg-grey-lighten-5">
+    <v-app-bar style="position:fixed" :elevation="2" class="bg-grey-lighten-5">
         <v-btn @click="open = !open" :icon="arrow"/>
         <v-img class="mx-2" max-height="88" max-width="15%" min-width="15%" contain src="@assets/piebetslogo.png" @click="toggle_path = '/'" style="cursor:pointer"/>
         <div class="bg-grey-lighten-3 rounded-lg ma-4">
