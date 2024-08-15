@@ -1,10 +1,4 @@
 <template>
-
-<v-navigation-drawer rail expand-on-hover>
-    <v-list>
-        <v-list-item v-for="item in items_navegacao" :prepend-icon="item.icone" :title="item.nome"></v-list-item>
-    </v-list>
-</v-navigation-drawer>
 <v-slide-group show-arrows>
         <v-slide-group-item>
             <CartaoPartida class="ma-2" time_1="Time 1" time_2="Time 2" :odds1="2.3" :odds2="1.5" :odds-empate="2" data="Hoje" hora="12:00"></CartaoPartida>
@@ -28,38 +22,4 @@
 </template>
 
 <script lang="ts" setup>
-const items_navegacao = [
-    {
-        nome: 'Futebol',
-        icone: 'mdi-soccer'
-    },
-    {
-        nome: 'Bilhetes',
-        icone: 'mdi-ticket'
-    },
-    {
-        nome: 'Apostas por Odds',
-        icone: 'mdi-medal'
-    },
-    {
-        nome: 'Futebol',
-        icone: 'mdi-soccer'
-    },
-    {
-        nome: 'Futebol',
-        icone: 'mdi-soccer'
-    },
-    {
-        nome: 'Futebol',
-        icone: 'mdi-soccer'
-    },
-    {
-        nome: 'Futebol',
-        icone: 'mdi-soccer'
-    },
-    {
-        nome: 'Futebol',
-        icone: 'mdi-soccer'
-    },
-]
 </script>
