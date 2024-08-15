@@ -7,9 +7,9 @@ Frontend de um site de bets feito como exercício.
 ## TODO
 
 - Overlay do site/portal
-    - Navbar horizontal
-    - Navbar vertical
-    - Footnote
+    - ~~Navbar horizontal~~
+    - ~~Navbar vertical~~
+    - ~~Footnote~~
 - Aplicação (/sport)
     - Layout
     - Navbar do app
