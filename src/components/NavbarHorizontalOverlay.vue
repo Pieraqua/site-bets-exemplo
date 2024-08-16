@@ -6,7 +6,7 @@
         <div class="bg-grey-lighten-3 rounded-lg ma-4">
             <v-btn-toggle variant="text" mandatory color="blue" class="pa-1" v-model="toggle_path">
                 <v-btn rounded="lg" class="elevation-0" value="/home"><v-icon>mdi-cards-spade</v-icon>Jogos</v-btn>
-                <v-btn rounded="lg" class="elevation-0" value="/bets"><v-icon>mdi-soccer</v-icon>Esportes</v-btn>
+                <v-btn rounded="lg" class="elevation-0" value="/sports"><v-icon>mdi-soccer</v-icon>Esportes</v-btn>
             </v-btn-toggle>
         </div>
         <v-btn icon="mdi-magnify" class="rounded-lg bg-grey-lighten-4 ma-2"></v-btn>

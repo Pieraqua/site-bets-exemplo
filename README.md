@@ -13,11 +13,15 @@ Frontend de um site de bets feito como exercício.
 - Aplicação (/sport)
     - Layout
     - Navbar do app
+        - ~~Layout e icones com resizing correto~~
+        - Dropdown
     - Página principal
-        - Abas da página principal
+        - ~~Abas da página principal~~
         - Display de jogos futuros
+            - Cards
         - Display de jogos
             - Abas do display
+                - Dragscroll?
             - Cartões de jogos
             - Cartão de jogo principal
             - Cartão de combinações populares
