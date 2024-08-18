@@ -8,7 +8,10 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     AppFooter: typeof import('./components/AppFooter.vue')['default']
+    CartaoJogoPrincipal: typeof import('./components/sports/CartaoJogoPrincipal.vue')['default']
     CartaoPartida: typeof import('./components/CartaoPartida.vue')['default']
+    CartaoPartidaAlt: typeof import('./components/sports/CartaoPartidaAlt.vue')['default']
+    DisplayJogos: typeof import('./components/sports/DisplayJogos.vue')['default']
     HelloWorld: typeof import('./components/HelloWorld.vue')['default']
     HorizontalCardsDisplay: typeof import('./components/sports/HorizontalCardsDisplay.vue')['default']
     NavbarHorizontalOverlay: typeof import('./components/NavbarHorizontalOverlay.vue')['default']

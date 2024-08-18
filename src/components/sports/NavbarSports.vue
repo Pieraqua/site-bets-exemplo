@@ -2,7 +2,9 @@
     <v-app-bar elevation="3" density="compact" ref="bar">
         <div  v-for="item in botoes_navbar.slice(0, icones_a_renderizar)" >
             <v-divider v-if="item.divider" vertical inset opacity="0.4" style="height:28px; align-self: center" class="pl-1"></v-divider>
-            <v-btn v-else :icon="item.icon" :value="item.value" flat variant="plain" :ripple="false"></v-btn>
+            <div  v-else>
+                <v-btn :icon="item.icon" :value="item.value" variant="plain" :ripple="false"></v-btn>
+            </div>
         </div>
 
         <v-app-bar-title></v-app-bar-title>
@@ -29,7 +31,7 @@ onBeforeUnmount(() => {
 
 function onResize()
 {
-    console.log('resize')
+    //console.log('resize')
     if(search.value !== null)
     {
         icones_a_renderizar.value = bar.value.$el.clientWidth/search.value.$el.clientWidth - 2;
@@ -136,5 +138,6 @@ const botoes_navbar = [
 ] 
 </script>
 
-<style lang="css" scoped>
+<style lang="scss" scoped>
+
 </style>

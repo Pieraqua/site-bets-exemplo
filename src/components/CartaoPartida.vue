@@ -1,5 +1,5 @@
 <template>
-<v-card class="pa-0 ma-0" width="366px" style="font-size:small">
+<v-card class="pa-0 ma-0 bg-grey-lighten-4 mr-3" width="366px" style="font-size:small" elevation="0">
         <v-container fluid class="pa-1 ma-0">
             <!-- Informação do campeonato + data da partida -->
             <v-row no-gutters>

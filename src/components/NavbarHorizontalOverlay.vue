@@ -4,9 +4,16 @@
         <v-btn @click="open = !open" :icon="arrow"/>
         <v-img class="mx-2" max-height="88" max-width="15%" min-width="15%" contain src="@assets/piebetslogo.png" @click="toggle_path = '/'" style="cursor:pointer"/>
         <div class="bg-grey-lighten-3 rounded-lg ma-4">
-            <v-btn-toggle variant="text" mandatory color="blue" class="pa-1" v-model="toggle_path">
-                <v-btn rounded="lg" class="elevation-0" value="/home"><v-icon>mdi-cards-spade</v-icon>Jogos</v-btn>
-                <v-btn rounded="lg" class="elevation-0" value="/sports"><v-icon>mdi-soccer</v-icon>Esportes</v-btn>
+            <v-btn-toggle variant="text" color="blue-darken-2" class="pa-1" v-model="toggle_path">
+                <v-btn rounded="lg" variant="flat" class="elevation-0 bg-transparent text-none" :ripple="false" value="/home">
+                    <template v-slot:prepend>
+                        <v-icon>mdi-cards-spade</v-icon>
+                    </template>Jogos</v-btn>
+                <v-btn rounded="lg" variant="flat" class="elevation-0 bg-transparent text-none" :ripple="false" value="/sports">
+                    <template v-slot:prepend>
+                        <v-icon>mdi-soccer</v-icon>
+                    </template>
+                    Esportes</v-btn>
             </v-btn-toggle>
         </div>
         <v-btn icon="mdi-magnify" class="rounded-lg bg-grey-lighten-4 ma-2"></v-btn>
@@ -47,11 +54,15 @@
     //-- "Slider" de troca entre aplicativos do portal --//
     const toggle_path = ref("");
 
-    watch(toggle_path, () => {
-        router.push(toggle_path.value)
+    watch(toggle_path, (to, from) => {
+        if (to != undefined){
+            router.push(toggle_path.value)
+        }
+        else toggle_path.value = from;
     });
 
     watch(router.currentRoute, (to,from) => {
+
         toggle_path.value = to.name;
     })
 
@@ -66,6 +77,10 @@
         arrow.value = open.value ? "mdi-arrow-left" : "mdi-arrow-right";
         emit('open');
     });
+
+    onMounted(() => {
+        toggle_path.value = router.currentRoute.value.name;
+    })
 </script>
 
 <style>
@@ -73,4 +88,5 @@
     {
         flex-direction: column;
     }
+    
 </style>
