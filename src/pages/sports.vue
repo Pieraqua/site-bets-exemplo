@@ -70,11 +70,14 @@
     <v-container>
         <v-row align="center" justify="center" no-gutters>
             <v-col cols="2">
-                <h4 class="text-overline">FORMATO DAS ODDS</h4>
+                <h4 class="text-overline text-grey-lighten-1">FORMATO DAS ODDS</h4>
             </v-col>
             <v-col cols="2" >
-                <v-select variant="solo-filled" class="elevation-0" density="compact" v-model="formato_odds" max-width="200px" :items="lista_formatos"></v-select>
+                <v-select variant="solo-filled" flat density="compact" v-model="formato_odds" max-width="200px" :items="lista_formatos"></v-select>
             </v-col>
+        </v-row>
+        <v-row align="center" justify="center" no-gutters>
+            <h5 class="text-grey-lighten-1">Textotextotexto</h5>
         </v-row>
     </v-container>
 

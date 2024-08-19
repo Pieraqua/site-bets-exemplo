@@ -45,27 +45,49 @@
                 <!-- Bet dos times -->
                 <v-row no-gutters class="justify-space-between">
                     <v-col cols="5">
-                        <v-card link :ripple="false" class="text-center mr-2">
-                            <v-img class="mt-2 ml-10 mr-10" src="@/assets/time1_icone.png"></v-img>
-                            <p class="ma-2">Time 1</p>
-                            <p class="ma-2 mt-6 text-h6">6</p>
+                        <v-card link :ripple="false" class="text-center mr-2 fill-height" min-height="192px">
+                            <v-row class="h-75" no-gutters>
+                                <v-col >
+                                    <v-img class="mt-2 ml-8 mr-8" src="@/assets/time1_icone.png"></v-img>
+                                    <p class="mt-2">Time 1</p>
+                                </v-col>
+                            </v-row>
+                            <v-row class="h-25" align="center" no-gutters>
+                                <v-col>
+                                    <p class="text-h6">6</p>
+                                </v-col>
+                            </v-row>
                         </v-card>
                     </v-col>
                     <v-col cols="2">
-                        <v-card link :ripple="false" class="text-center fill-height">
-                            <div class="h-75 text-center ">
-                                <p class="my-auto pt-10 text-h6 text-grey">X</p>
-                            </div>
-                            <div class="h-25 " >
-                                <p class="text-h6 pt-5 my-auto ">4</p>
-                            </div>
+                        <v-card link :ripple="false" class="text-center fill-height" min-height="192px">
+                            <v-row class="h-75" no-gutters>
+                                <v-col>
+                                    <div class="text-center ">
+                                        <p class="my-auto pt-10 text-h6 text-grey">X</p>
+                                    </div>
+                                </v-col>
+                            </v-row>
+                            <v-row align="center" class="h-25" no-gutters>
+                                <v-col>
+                                    <p class="text-h6">4</p>
+                                </v-col>
+                            </v-row>
                         </v-card>
                     </v-col>
                     <v-col cols="5">
-                        <v-card link :ripple="false"  class="text-center ml-2">
-                            <v-img class="mt-2 ml-10 mr-10" src="@/assets/time2_icone.png"></v-img>
-                            <p class="ma-2">Time 2</p>
-                            <p class="ma-2 mt-6 text-h6">4</p>
+                        <v-card link :ripple="false" class="text-center ml-2 fill-height" min-height="192px">
+                            <v-row no-gutters class="h-75">
+                                <v-col >
+                                    <v-img class="mt-2 ml-8 mr-8" src="@/assets/time2_icone.png"></v-img>
+                                    <p class="mt-2">Time 2</p>
+                                </v-col>
+                            </v-row>
+                            <v-row class="h-25" align="center" no-gutters>
+                                <v-col>
+                                    <p class="text-h6">4</p>
+                                </v-col>
+                            </v-row>
                         </v-card>
                     </v-col>
                     

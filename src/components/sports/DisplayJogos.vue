@@ -15,14 +15,14 @@
             <!-- Cartoes menores -->
             <v-col cols="8">
                 <v-row no-gutters>
-                    <v-col class="ma-2 mb-2" v-for="partida in partidasCortado">
+                    <v-col class="ma-1" v-for="partida in partidasCortado">
                         <cartao-partida-alt :partida="partida"></cartao-partida-alt>
                     </v-col>
                 </v-row>
             </v-col>
 
             <!-- Cartao grande -->
-            <v-col cols="4" class="mt-2 mb-2">
+            <v-col cols="4" class="mt-1 mb-1">
                 <slot></slot>
             </v-col>
         </v-row>
