@@ -48,7 +48,7 @@
             :links_topo="links_topo_aovivo" :icones_topo="icones_topo_aovivo">
             <CartaoJogoPrincipal></CartaoJogoPrincipal>
         </DisplayJogos>
-        <div class="mr-6 ml-2">
+        <div class="mr-0 ml-2">
             <v-btn variant="tonal" :ripple="false" block>Ir para Ao Vivo
                 <template v-slot:append>
                     <v-icon>mdi-arrow-right</v-icon>
