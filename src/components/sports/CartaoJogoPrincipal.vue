@@ -1,6 +1,6 @@
 <template>
     <v-card min-width="382px" height="100%" flat class="bg-grey-lighten-2">
-        <v-card-title class="mt-4 mb-4  text-center">
+        <v-card-title class="mt-4  text-center">
             <v-icon class="mr-2" color="orange">mdi-crown</v-icon>Jogo Principal
         </v-card-title>
 
@@ -46,7 +46,7 @@
                 <v-row no-gutters class="justify-space-between">
                     <v-col cols="5">
                         <v-card link :ripple="false" class="text-center mr-2">
-                            <v-img class="mt-4 ml-10 mr-10" src="@/assets/time1_icone.png"></v-img>
+                            <v-img class="mt-2 ml-10 mr-10" src="@/assets/time1_icone.png"></v-img>
                             <p class="ma-2">Time 1</p>
                             <p class="ma-2 mt-6 text-h6">6</p>
                         </v-card>
@@ -57,13 +57,13 @@
                                 <p class="my-auto pt-10 text-h6 text-grey">X</p>
                             </div>
                             <div class="h-25 " >
-                                <p class="text-h6 pt-1 my-auto ">4</p>
+                                <p class="text-h6 pt-5 my-auto ">4</p>
                             </div>
                         </v-card>
                     </v-col>
                     <v-col cols="5">
                         <v-card link :ripple="false"  class="text-center ml-2">
-                            <v-img class="mt-4 ml-10 mr-10" src="@/assets/time2_icone.png"></v-img>
+                            <v-img class="mt-2 ml-10 mr-10" src="@/assets/time2_icone.png"></v-img>
                             <p class="ma-2">Time 2</p>
                             <p class="ma-2 mt-6 text-h6">4</p>
                         </v-card>
@@ -72,12 +72,12 @@
                 </v-row>
 
                 <!-- Valor aposta -->
-                <v-row no-gutters class="mt-8">
+                <v-row no-gutters class="mt-4">
                     <v-text-field variant="plain" density="compact" class="input-last text-h3 bg-white" suffix="$" v-model="valor_aposta"></v-text-field>
                 </v-row>
 
                 <!-- Valores padrão -->
-                <v-row no-gutters class="mt-4" >
+                <v-row no-gutters class="mt-3" >
                     <v-col cols="12">
                         <v-btn-toggle color="blue-darken-2" density="compact" style="width:100%" v-model="valor_aposta" >
                             <v-row no-gutters justify="space-between">

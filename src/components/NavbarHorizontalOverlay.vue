@@ -1,6 +1,6 @@
 <template>
 
-    <v-app-bar style="position:fixed" :elevation="2" class="bg-grey-lighten-5">
+    <v-app-bar style="position:fixed; background: linear-gradient(270deg,#f7faff,#f2f6ff);" :elevation="2" >
         <v-btn @click="open = !open" :icon="arrow"/>
         <v-img class="mx-2" max-height="88" max-width="15%" min-width="15%" contain src="@assets/piebetslogo.png" @click="toggle_path = '/'" style="cursor:pointer"/>
         <div class="bg-grey-lighten-3 rounded-lg ma-4">
@@ -21,8 +21,8 @@
         <v-app-bar-title>
         </v-app-bar-title>
 
-        <v-btn class="ma-1">ENTRAR</v-btn>
-        <v-btn class="ma-1 bg-green rounded-lg" variant="outlined" color="white">INSCREVER-SE</v-btn>
+        <v-btn :ripple="false" class="ma-1">ENTRAR</v-btn>
+        <v-btn :ripple="false" class="ma-1 bg-green rounded-lg" variant="outlined" color="white">INSCREVER-SE</v-btn>
             <v-menu>
                 <template v-slot:activator="{ props }">
                 <v-btn icon="mdi-earth" v-bind="props"></v-btn>

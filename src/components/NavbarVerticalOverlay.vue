@@ -1,5 +1,5 @@
 <template>
-<v-navigation-drawer permanent elevation="4" style="position:fixed" app rail v-if="!open" class="hide-scrollbar">
+<v-navigation-drawer permanent elevation="4" style="position:fixed; background-color:#f6f8fb" app rail v-if="!open" class="hide-scrollbar">
     <v-list >
         <v-list-item variant="plain" :ripple="false" flat link value="/4"><v-icon>mdi-gift</v-icon></v-list-item>
         <v-list-item variant="plain" :ripple="false" flat link value="/5"><v-icon color="orange">mdi-pistol</v-icon></v-list-item>
@@ -23,7 +23,7 @@
 </v-navigation-drawer>
 
 
-<v-navigation-drawer style="position:fixed" app v-if="open" class="hide-scrollbar">
+<v-navigation-drawer style="position:fixed; background-color:#f6f8fb" app v-if="open" class="hide-scrollbar">
     <v-list nav density="compact">
         <v-container  cols="2" class="mb-2 mt-2 pa-0">
             <v-row no-gutters >
