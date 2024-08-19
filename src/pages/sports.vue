@@ -23,7 +23,7 @@
     <!-- Pagina de destaques -->
     <div class="ma-4" v-if="pagina == 'destaques'">
         <!-- Jogos futuros -->
-         <v-slide-group show-arrows="always" id="slide_partidas_destaque">
+         <v-slide-group id="slide_partidas_destaque">
             <CartaoPartida v-for="partida in partidas_destaque"
                 :campeonato="partida.campeonato"
                 :tempo_partida="partida.tempo_partida"
@@ -67,19 +67,12 @@
     </div>
 
     <!-- Escolha do formato das odds -->
-    <v-container>
-        <v-row align="center" justify="center" no-gutters>
-            <v-col cols="2">
-                <h4 class="text-overline text-grey-lighten-1">FORMATO DAS ODDS</h4>
-            </v-col>
-            <v-col cols="2" >
-                <v-select variant="solo-filled" flat density="compact" v-model="formato_odds" max-width="200px" :items="lista_formatos"></v-select>
-            </v-col>
-        </v-row>
-        <v-row align="center" justify="center" no-gutters>
-            <h5 class="text-grey-lighten-1">Textotextotexto</h5>
-        </v-row>
-    </v-container>
+     <div style="margin:0 auto; width:fit-content" >
+        <h4 class="text-overline text-grey-lighten-1 float-left mr-2">FORMATO DAS ODDS</h4>
+        <v-select class="" variant="solo-filled" flat density="compact" v-model="formato_odds" max-width="200px" :items="lista_formatos"></v-select>
+        <h5 class="text-grey-lighten-1 mb-2" style="margin: 0 auto; width:fit-content">Textotextotexto</h5>
+     </div>
+
 
     <!-- Informações legais -->
 </template>

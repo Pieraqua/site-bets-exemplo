@@ -18,6 +18,7 @@ Os componentes que foram desenvolvidos como template foram escolhidos por crité
 
 A página de Sports é composta por uma navbar horizontal no topo, um display de jogos em 'destaque' e vários displays customizáveis (Popular, Ao Vivo e Próximos) que seguem o mesmo formato de um grid de cartões. Os compoentes escolhidos como template foram os cartões de partida e os displays customizáveis, que aparecem diversas vezes na página.
 
+
 ## TODO
 
 - Overlay do site/portal
