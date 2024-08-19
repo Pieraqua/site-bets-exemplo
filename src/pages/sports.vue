@@ -200,6 +200,20 @@
             oddsEmpate: 1.3,
             statusPartida: false
         }),
+        new Partida({
+            campeonato: 'Grécia - Super Liga',
+            tempo_partida: "Hoje, 15:00",
+            time_1: 'Time 1',
+            time_1_icon: 'src/assets/time1_icone.png',
+            time_1_pontos: 1,
+            time_2: 'Time 2',
+            time_2_icon: 'src/assets/time2_icone.png',
+            time_2_pontos: 0,
+            odds1: 1.5,
+            odds2: 1.8,
+            oddsEmpate: 1.3,
+            statusPartida: false
+        }),
     ];
 
     const links_topo_popular = ['Futebol', 'Futebol Americano'];

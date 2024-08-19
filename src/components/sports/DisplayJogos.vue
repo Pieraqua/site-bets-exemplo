@@ -10,12 +10,12 @@
             </v-btn>
         </v-slide-group-item>
     </v-slide-group>
-    <v-container class="ma-0 pa-0">
+    <v-container class="ma-0 pa-0" fluid>
         <v-row no-gutters>
             <!-- Cartoes menores -->
             <v-col cols="8">
                 <v-row no-gutters>
-                    <v-col class="ma-2" v-for="partida in partidasCortado">
+                    <v-col class="ma-2 mb-2" v-for="partida in partidasCortado">
                         <cartao-partida-alt :partida="partida"></cartao-partida-alt>
                     </v-col>
                 </v-row>
@@ -41,7 +41,7 @@
         }
     )
 
-    const partidasCortado = props.partidas.slice(0,6);
+    const partidasCortado = props.partidas.slice(0,9);
     const janelaAtual = ref(props.links_topo[0]);
 
 </script>
