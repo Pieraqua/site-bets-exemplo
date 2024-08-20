@@ -139,7 +139,6 @@
     function tipoTela(){
         // name is reactive and
         // must use .value
-        console.log(disp.name.value);
 
         switch (disp.name.value) {
             case 'xs': return 0;

@@ -3,7 +3,7 @@
     <v-app-bar style="position:fixed; background: linear-gradient(270deg,#f7faff,#f2f6ff);" :elevation="2" >
         <v-btn @click="open = !open" :icon="arrow"/>
         <v-img class="mx-2" max-height="88" max-width="15%" min-width="15%" contain src="@assets/piebetslogo.png" @click="toggle_path = '/'" style="cursor:pointer"/>
-        <div class="bg-grey-lighten-3 rounded-lg ma-4">
+        <div v-if="tipoTela >= 1" class="bg-grey-lighten-3 rounded-lg ma-4">
             <v-btn-toggle variant="text" color="blue-darken-2" class="pa-1" v-model="toggle_path">
                 <v-btn rounded="lg" variant="flat" class="elevation-0 bg-transparent text-none" :ripple="false" value="/home">
                     <template v-slot:prepend>
@@ -81,6 +81,26 @@
     onMounted(() => {
         toggle_path.value = router.currentRoute.value.name;
     })
+
+    import {useDisplay} from 'vuetify';
+    const disp = useDisplay();
+
+    // (Cards, Colunas)
+    const tipoTela = computed(()=>{
+        // name is reactive and
+        // must use .value
+
+        switch (disp.name.value) {
+            case 'xs': return 0;
+            case 'sm': return 0;
+            case 'md': return 1;
+            case 'lg': return 2;
+            case 'xl': return 3;
+            case 'xxl': return 3;
+        };
+
+        return undefined;
+    });
 </script>
 
 <style>
