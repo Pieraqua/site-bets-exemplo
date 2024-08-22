@@ -1,5 +1,5 @@
 <template>
-    <v-card flat class="bg-grey-lighten-2 fill-height pa-md-4 pa-0 pb-0 justify-center" max-height="651px">
+    <v-card flat class="fill-height pa-md-4 pa-0 pb-0  justify-center" style="background: #e3e8eb" max-height="651px">
         <v-container float style="max-width:432px; height:100%">
             <v-row no-gutters class="mb-1 font-weight-medium pb-md-6" justify="center">
                 <v-col cols="auto">
@@ -27,14 +27,14 @@
                         Itália - Série A
                     </v-btn>
                 </v-col>
-                <v-col cols="6" class="text-right text-body-2 text-grey">
+                <v-col cols="6" class="text-right text-body-2 texto-fundo font-weight-medium" >
                     Hoje, 15:00
                 </v-col>
             </v-row>
             <!-- Bet dos times -->
             <v-row no-gutters justify="center" class="pb-md-3">
                 <v-col>
-                    <v-card link :ripple="false" class="text-center mr-2 pa-2 fill-height" min-height="192px">
+                    <v-card link :ripple="false" elevation="0" class=" bg-grey-lighten-4 text-center mr-2 pa-2 fill-height" min-height="192px">
                         <v-row no-gutters align="center" justify="center" class="h-75">
                             <v-col>
                                 <v-img height="72px" width="72px" class="mx-auto" src="@/assets/time1_icone.png"></v-img>
@@ -43,13 +43,13 @@
                         </v-row>
                         <v-row align="end" no-gutters class="h-25">
                             <v-col>
-                                <p class="text-body-1 font-weight-medium">6</p>
+                                <p class="text-body-1 font-weight-medium texto-fundo" style="opacity: 1">6</p>
                             </v-col>
                         </v-row>
                     </v-card>
                 </v-col>
                 <v-col cols="2">
-                    <v-card link :ripple="false" class="text-center fill-height pa-2">
+                    <v-card link :ripple="false" elevation="0" class="text-center bg-grey-lighten-4  fill-height pa-2">
                         <v-row no-gutters align="center" class="h-75">
                             <v-col>
                                 <div class="text-center">
@@ -59,13 +59,13 @@
                         </v-row>
                         <v-row align="end" no-gutters class="h-25">
                             <v-col>
-                                <p class="text-body-1 font-weight-medium">4</p>
+                                <p class="text-body-1 font-weight-bold texto-fundo" style="opacity: 1">4</p>
                             </v-col>
                         </v-row>
                     </v-card>
                 </v-col>
                 <v-col>
-                    <v-card link :ripple="false" class="text-center ml-2 pa-2 fill-height">
+                    <v-card link :ripple="false" elevation="0" class="text-center bg-grey-lighten-4  ml-2 pa-2 fill-height">
                         <v-row no-gutters align="center" justify="center" class="h-75">
                             <v-col>
                                 <v-img height="72px" width="72px" class="mx-auto" src="@/assets/time2_icone.png"></v-img>
@@ -74,7 +74,7 @@
                         </v-row>
                         <v-row align="end" no-gutters class="h-25">
                             <v-col>
-                                <p class="text-body-1 font-weight-medium">4</p>
+                                <p class="text-body-1 font-weight-medium texto-fundo" style="opacity: 1">4</p>
                             </v-col>
                         </v-row>
                     </v-card>
@@ -111,19 +111,19 @@
             <!-- Efetuar aposta -->
             <v-row no-gutters justify="center" class="pt-2">
                 <v-col cols="8">
-                    <v-btn block flat rounded="xl">EFETUAR APOSTA</v-btn>
+                    <v-btn block flat :ripple="false" rounded="xl">EFETUAR APOSTA</v-btn>
                 </v-col>
             </v-row>
                 
             <v-row no-gutters justify="space-between" align="center" class="pt-md-6">
                 <v-col cols="1">
-                    <v-btn size="x-small" class="bg-white" icon="mdi-arrow-left"></v-btn>
+                    <v-btn size="x-small" elevation="0" :ripple="false" class="bg-white" icon="mdi-arrow-left"></v-btn>
                 </v-col>
                 <v-col cols="auto">
                     <v-btn variant="plain" size="x-small" class="text-none" append-icon="mdi-arrow-right">Ir para o Evento</v-btn>
                 </v-col>
                 <v-col cols="1">
-                    <v-btn size="x-small" class="bg-white" icon="mdi-arrow-right"></v-btn>
+                    <v-btn size="x-small"  elevation="0" :ripple="false" class="bg-white" icon="mdi-arrow-right"></v-btn>
                 </v-col>
             </v-row>
         </v-container>

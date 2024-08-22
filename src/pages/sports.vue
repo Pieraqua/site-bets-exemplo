@@ -5,13 +5,13 @@
     <!-- Abas página inicial -->
     <div>
         <v-btn-toggle mandatory class="mt-1" v-model="pagina">
-            <v-btn size="small" :ripple="false" variant="tonal" value="destaques" rounded="xl" class="mt-2 mb-2 ml-2 mr-1">
+            <v-btn size="small"  :ripple="false" variant="tonal" value="destaques" rounded="xl" class="bg-white mt-2 mb-2 ml-2 mr-1">
                 <template v-slot:prepend>
                     <v-icon :color="pagina == 'destaques' ? 'red' : 'grey'">mdi-square</v-icon>
                 </template>
                 Destaques
             </v-btn>
-            <v-btn size="small" :ripple="false" variant="tonal" value="agenda" rounded="xl" class="mt-2 mb-2 mr-1">
+            <v-btn size="small" :ripple="false" variant="tonal" value="agenda" rounded="xl" class=" bg-white mt-2 mb-2 mr-1">
                 <template v-slot:prepend>
                     <v-icon :color="pagina == 'agenda' ? 'purple' : 'grey'">mdi-calendar</v-icon>
                 </template>
@@ -23,7 +23,7 @@
     <!-- Pagina de destaques -->
     <div class="ma-4" v-if="pagina == 'destaques'">
         <!-- Jogos futuros -->
-         <v-slide-group id="slide_partidas_destaque">
+         <v-slide-group id="slide_partidas_destaque" style="min-height:172px">
             <CartaoPartida v-for="partida in partidas_destaque"
                 :campeonato="partida.campeonato"
                 :tempo_partida="partida.tempo_partida"

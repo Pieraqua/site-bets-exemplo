@@ -68,7 +68,7 @@
                 </v-col>
             </v-row>
             <!-- Odds -->
-            <v-row no-gutters class="mt-2" style="font-size:smaller">
+            <v-row no-gutters class="mt-1" style="font-size:smaller">
                 <v-col>
                     <v-card :ripple="false" link class="bg-grey-lighten-4 pa-2 mr-1" elevation="0">
                         <v-row>
@@ -145,7 +145,6 @@ const props = defineProps({
     font-weight: 600;
     min-width: 32px;
     justify-content: center;
-    
 }
 
 .col-mask{
